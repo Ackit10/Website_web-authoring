@@ -1,0 +1,33 @@
+*{margin:0px; padding:0px;}
+
+body{
+	background-image: url("Content/Protocols.jpg");
+}
+#Text
+{
+	padding:20px;
+}
+h1 {
+	padding-top: 3%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+div.Content h2
+{
+	text-align:center;
+	padding:4px;
+}
+div.Content p
+{
+	font-size: 18px;
+	padding:10px;
+}
+#Content {
+	width: 80%;
+	height: 100%;
+	opacity: 0.9;
+	background-color: darkgrey;
+	margin-left: 10%;
+}
+
+

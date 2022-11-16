@@ -1,0 +1,17 @@
+*{margin:0px; padding:0px;}
+#Content {
+
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.7;
+}
+h1
+{
+	text-align:center;
+	padding:30px;
+}
+body {
+	background-image: url("Content/ArpaNet.jpg");
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,24 @@
+*{margin:0px; padding:0px;}
+#Content {
+	width: 80%;
+	height: 120%;
+	margin-left: 10%;
+	background-color: white;
+	opacity: 0.9;
+}
+div.Content h1,h2
+{
+	padding:30px;
+	text-align:center;
+}
+body
+{
+	background-image: url("Content/quantum-networking.jpg");
+}
+img
+{
+	margin:20px;
+}
+div.Content p{
+	padding:20px;
+}

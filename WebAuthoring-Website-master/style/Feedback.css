@@ -1,0 +1,32 @@
+*{margin:0px; padding:0px;}
+
+#Content
+{
+	border: 1px solid black;
+	width:80%;
+	height:70%;
+	margin-left:10%;
+	background-color:white;
+	margin-top: 1%;
+}
+h1{
+	text-align:center;
+	padding:15px;
+}
+p
+{
+	padding:10px;
+}
+h4
+{
+	padding-top:80px;
+	padding-left:20px;
+}
+address
+{
+	padding-left:15px;
+}
+body
+{
+	background-color:aquamarine;
+}

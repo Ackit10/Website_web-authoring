@@ -1,0 +1,53 @@
+* {margin:0px;
+ padding:0px;
+ }
+body
+{
+background-image: url("Content/Security.jpg");
+}
+
+#Content
+{
+	width:90%;
+	height:130%;
+	margin-left:5%;
+	background-color:white;
+	opacity:0.9;
+}
+div.Content h2{
+	padding:15px;
+	text-align:center;
+}
+div.Content h1
+{
+	text-align:center;
+	padding:10px;
+}
+div.Content p
+{
+	padding:20px;
+}
+table.CryptoTable{
+	border-collapse:collapse;
+	margin-left:3%;
+	margin-right:3%;
+}
+table.CryptoTable tr,th {
+	border: 2px solid black;
+	padding:6px;
+}
+
+
+table.CryptoTypes {
+	margin:30px;
+	border-collapse: collapse;
+}
+
+table.CryptoTypes tr, th {
+		border: 2px solid black;
+		padding: 6px;
+	}
+img{
+	margin-right:10%;
+	margin-left:10%;
+}

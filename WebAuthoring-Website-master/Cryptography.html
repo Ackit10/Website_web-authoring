@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Cryptography in Internets</title>
+    <link rel = "stylesheet" href = "style/Cryptographic.css">
+    <link rel = "stylesheet" href = "style/Navigation.css">
+  </head>
+<body>
+ <ul class="navbar">
+	<a id = "link" href="Index.html"> <li> Home </li> </a>
+	<a id = "link" href="History.html"> <li> History </li> </a>
+	<a id = "link" href="Globalnet.html"> <li>Software of Internet </li></a>
+	<a id = "link" href="Network.html"> <li> Hardware of Internet </li> </a>
+	<a id = "link" href="FirstThings.html"> <li>ArpaNet </li> </a>
+	<a id = "link" href="Modern.html"> <li> Internet in now </li> </a>
+	<a id = "link" href="Protocols.html"> <li> Network protocols </li> </a>
+	<a id = "link" href="Cryptography.html"> <li> Cryptography using in network </li> </a>
+	<a id = "link" href="Future.html"> <li> Internet in future </li> </a>
+	<a id = "link" href="Feedback.html"> <li> Feedback </li> </a>
+</ul>
+<div id = "Content" class="Content">
+	<h1>
+		Cryptography in Internet
+	</h1>
+	<p>
+		Cryptography is most important part of network to keep user datas in secure. Cryptography is science about keeping data in secure if enemy know about them.
+		Now we know about this types of cryptography protocols:
+		<table class="CryptoTypes">
+			<tr>
+				<th>Symmetric-key cryptography protocols</th>
+				<th>Symmetric-key algorithms are algorithms for cryptography that use the same cryptographic keys for both the encryption of plaintext and the decryption of ciphertext.
+				     The keys may be identical, or there may be a simple transformation to go between the two keys.</th>
+			</tr>
+			<tr>
+				<th>
+					Public-key cryptography protocols
+				</th>
+				<th>
+					Public-key cryptography is the field of cryptographic systems that use pairs of related keys. 
+					Each key pair consists of a public key and a corresponding private key. 
+					Key pairs are generated with cryptographic algorithms based on mathematical problems termed one-way functions.
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Quantum cryptography algorithm
+				</th>
+				<th>
+					Quantum cryptography is the science of exploiting quantum mechanical properties to perform cryptographic tasks.
+					The best known example of quantum cryptography is quantum key distribution which offers an information-theoretically
+					secure solution to the key exchange problem.
+				</th>
+			</tr>
+			</table>
+	</p>
+	<h2>
+		Public-key cryptography
+	</h2>
+	<p>
+		Public-key Cryptography algprithm mostly are based on two different types of keys - public key and private key.
+		Public-key are using to share with person for encrypt message what he want to send and private key are needed to decrypt this message.
+		Public-key cryptography are based on hard to solve mathematical problems, for example RSA algorithm are based on "factoring problem".
+		There is some most popular algorithms what using around the Internet:
+		
+	</p>
+	<table class=" CryptoTable">
+			<tr>
+				<th>Algorithm name</th>
+				<th>Key size</th>
+				<th>Short description</th>
+			</tr>
+			<tr>
+				<th>RSA</th>
+				<th> 2048 to 4096 bit </th>
+				<th> In a public-key cryptosystem, the encryption key is public and distinct from the decryption key, which is kept secret (private).
+				     An RSA user creates and publishes a public key based on two large prime numbers, along with an auxiliary value. 
+				     The prime numbers are kept secret. Messages can be encrypted by anyone, via the public key, but can only be decoded by someone who knows the prime numbers.</th>
+			</tr>
+			<tr>
+				<th>DSA</th>
+				<th style=" width:150px;"> Private: 160-256 bit <br>
+				     Public: 1024-3072 bit</th>
+				<th>DSA is a public-key cryptosystem and Federal Information Processing Standard for digital signatures,
+				    based on the mathematical concept of modular exponentiation and the discrete logarithm problem.</th>
+			</tr>
+			<tr>
+				<th>ElGamal </th>
+				<th> 4096 bit</th>
+				<th>Asymmetric key encryption algorithm for public-key cryptography which is based on the Diffie–Hellman key exchange.
+				    It was described by Taher Elgamal in 1985.</th>
+			</tr>
+
+	</table>
+
+</div>
+</body>

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head><meta name="msvalidate.01" content="FCFC95C1A901DB71C0F523E6AFDE5A85" />
+<meta charset="UTF-8"><script type="ddc507d282c8a234e292151c-text/javascript">if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script type="ddc507d282c8a234e292151c-text/javascript">class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PL8NH');</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link data-minify="1" rel="stylesheet" type="text/css" media="all" href="https://www.ssl2buy.com/wiki/wp-content/cache/min/1/wiki/wp-content/themes/ssl2buy/style.css?ver=1667295020" />
+<title>Symmetric vs. Asymmetric Encryption - What are differences?</title>
+<meta name='robots' content='max-image-preview:large' />
+
+<meta name="description" content="Let’s understand the key differences between symmetric vs asymmetric encryption. In a simple word, asymmetric encryption is more secure than symmetric encryption." />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Symmetric vs. Asymmetric Encryption - What are differences?" />
+<meta property="og:description" content="Let’s understand the key differences between symmetric vs asymmetric encryption. In a simple word, asymmetric encryption is more secure than symmetric encryption." />
+<meta property="og:url" content="https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences" />
+<meta property="og:image" content="https://www.ssl2buy.com/wiki/wp-content/uploads/2018/10/ssl2buy-ssl-certificate-security.jpg" />
+<meta property="article:published_time" content="2021-06-14" />
+<meta property="article:modified_time" content="2021-06-14" />
+<meta property="article:author" content="https://www.ssl2buy.com/wiki/author/wikis2buserjason" />
+<meta property="article:section" content="SSL Information" />
+<meta property="og:site_name" content="SSL2BUY Wiki - Get Solution for SSL Certificate Queries" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@ssl2buy" />
+<meta name="twitter:site" content="@ssl2buy" />
+<meta name="twitter:site:id" content="https://www.ssl2buy.com" />
+
+<link rel='dns-prefetch' href='//use.typekit.net' />
+<link rel='dns-prefetch' href='//fonts.gstatic.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.ssl2buy.com/wiki/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.ssl2buy.com/wiki/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<link rel="https://api.w.org/" href="https://www.ssl2buy.com/wiki/wp-json/" /><link rel="alternate" type="application/json" href="https://www.ssl2buy.com/wiki/wp-json/wp/v2/posts/1372" /><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ssl2buy.com/wiki/wp-includes/wlwmanifest.xml" />
+<link rel="canonical" href="https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences" />
+<link rel="alternate" type="application/json+oembed" href="https://www.ssl2buy.com/wiki/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ssl2buy.com%2Fwiki%2Fsymmetric-vs-asymmetric-encryption-what-are-differences" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.ssl2buy.com/wiki/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ssl2buy.com%2Fwiki%2Fsymmetric-vs-asymmetric-encryption-what-are-differences&#038;format=xml" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+  var __lc = {};
+  __lc.license = 2780382;
+  __lc.skill = 0;
+
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<link data-minify="1" rel="stylesheet" id="slick-css" href="https://www.ssl2buy.com/wiki/wp-content/cache/min/1/wiki/wp-content/themes/ssl2buy/assets/css/slick.css?ver=1667295020" type="text/css" media="all" />
+<script type="rocketlazyloadscript" src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/assets/js/slick.min.js" data-rocket-type="text/javascript" defer></script>
+<style>
+#chat-widget-container{z-index: 9999 !important;}	
+</style>
+</head>
+<body class="post-template-default single single-post postid-1372 single-format-standard has-sidebar">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PL8NH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="site-header">
+<div class="main-header">
+<div class="main">
+<div class="wrapper">
+<div class="logo-div">
+<a href="/" title="SSL2BUY" rel="home">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20211%2050'%3E%3C/svg%3E" alt="SSL2BUY" width="211" height="50" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/logo.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/logo.svg" alt="SSL2BUY" width="211" height="50" /></noscript>
+</a>
+</div>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<div class="mobile-menu-close">
+<a href="javascript:void(0);">Close</a>
+</div>
+<ul>
+<li><a href="https://www.ssl2buy.com/ssl-certificate-cost">Pricing</a></li>
+<li class="mega-menu brands-menu"><a href="javascript:void(0);">Brands</a>
+<div class="sub-mega-menu">
+<div class="sub-mega-menu-top">
+<div class="main">
+<ul>
+<li>
+<a href="https://www.ssl2buy.com/comodo-ssl-certificates" title="Cheap Comodo SSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2024'%3E%3C/svg%3E" title="Buy Comodo SSL Certificates" alt="Buy Comodo SSL Certificates" width="112" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/comodo.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/comodo.svg" title="Buy Comodo SSL Certificates" alt="Buy Comodo SSL Certificates" width="112" height="24" /></noscript></div>
+<div class="menu-tagline">Comodo SSL Certificates</div>
+ <div class="menu-price"><span class="menu-starts">starts @</span> $8.00<span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/sectigo-ssl-certificates" title="Cheap Sectigo SSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2024'%3E%3C/svg%3E" title="Buy Sectigo SSL Certificates" alt="Buy Sectigo SSL Certificates" width="112" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/sectigo.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/sectigo.svg" title="Buy Sectigo SSL Certificates" alt="Buy Sectigo SSL Certificates" width="112" height="24" /></noscript></div>
+<div class="menu-tagline">Sectigo SSL Certificates</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $8.00<span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/alpha-ssl-certificates" title="Cheap AlphaSSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2024'%3E%3C/svg%3E" title="Buy AlphaSSL Certificates" alt="Buy AlphaSSL Certificates" width="130" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/alphassl.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/alphassl.svg" title="Buy AlphaSSL Certificates" alt="Buy AlphaSSL Certificates" width="130" height="24" /></noscript></div>
+<div class="menu-tagline">AlphaSSL Certificates</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $16.00<span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/rapidssl-ssl-certificates" title="Cheap RapidSSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2093%2024'%3E%3C/svg%3E" title="Buy RapidSSL Certificates" alt="Buy RapidSSL Certificates" width="93" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/rapidssl.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/rapidssl.svg" title="Buy RapidSSL Certificates" alt="Buy RapidSSL Certificates" width="93" height="24"  /></noscript></div>
+<div class="menu-tagline">RapidSSL Certificates</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $19.20<span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/geotrust-ssl-certificates" title="Cheap GeoTrust SSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2024'%3E%3C/svg%3E" title="Buy GeoTrust SSL Certificates" alt="Buy GeoTrust SSL Certificates" width="112" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/geotrust.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/geotrust.svg" title="Buy GeoTrust SSL Certificates" alt="Buy GeoTrust SSL Certificates" width="112" height="24"  /></noscript></div>
+<div class="menu-tagline">GeoTrust SSL Certificates</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $50.00<span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/thawte-ssl-certificates" title="Cheap Thawte SSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%2024'%3E%3C/svg%3E" title="Buy Thawte SSL Certificates" alt="Buy Thawte SSL Certificates" width="100" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/thawte.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/thawte.svg" title="Buy Thawte SSL Certificates" alt="Buy Thawte SSL Certificates" width="100" height="24" /></noscript></div>
+<div class="menu-tagline">Thawte SSL Certificates</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $43.20<span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/globalsign-ssl-certificates" title="Cheap GlobalSign SSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%2024'%3E%3C/svg%3E" title="Buy GlobalSign SSL Certificates" alt="Buy GlobalSign SSL Certificates" width="112" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/globalsign.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/globalsign.svg" title="Buy GlobalSign SSL Certificates" alt="Buy GlobalSign SSL Certificates" width="112" height="24" /></noscript></div>
+<div class="menu-tagline">GlobalSign SSL Certificates</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $100.00<span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/digicert-ssl-certificates" title="Cheap DigiCert SSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2088%2024'%3E%3C/svg%3E" title="Buy DigiCert SSL Certificates" alt="Buy DigiCert SSL Certificates" width="88" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/digicert.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/digicert.svg" title="Buy DigiCert SSL Certificates" alt="Buy DigiCert SSL Certificates" width="88" height="24" /></noscript></div>
+<div class="menu-tagline">DigiCert SSL Certificates</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $228.40<span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/symantec-ssl-certificates" title="Cheap Symantec SSL Certificates">
+<div class="menu-title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2093%2024'%3E%3C/svg%3E" title="Buy Symantec SSL Certificates" alt="Buy Symantec SSL Certificates" width="93" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/symantec.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/symantec.svg" title="Buy Symantec SSL Certificates" alt="Buy Symantec SSL Certificates" width="93" height="24" /></noscript></div>
+<div class="menu-tagline">Symantec SSL Certificates</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $360.00<span class="menu-view">View</span></div>
+</a>
+</li>
+</ul>
+<div class="sub-mega-menu-right">
+<div class="sub-mega-menu-right-box"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20126%20116'%3E%3C/svg%3E" alt="" width="126" height="116" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/30days.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/30days.svg" alt=""   width="126" height="116"/></noscript></div>
+<div class="sub-mega-menu-right-box"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20102%20102'%3E%3C/svg%3E" alt="" width="102" height="102" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/satisfaction.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/satisfaction.svg" alt="" width="102" height="102" /></noscript></div>
+<div class="sub-mega-menu-right-box menu-reviews">
+<a href="https://www.shopperapproved.com/reviews/ssl2buy.com/" target="_blank">
+<div class="menu-reviews-count">4.8</div>
+<div class="menu-reviews-stars"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20108%2024'%3E%3C/svg%3E" alt="Reviews Star" width="108" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/review-star.png" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/review-star.png" alt="Reviews Star" width="108" height="24" /></noscript></div>
+<div class="menu-reviews-total">14482 Reviews</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mega-menu products-menu"><a href="javascript:void(0);">Products</a>
+<div class="sub-mega-menu">
+<div class="sub-mega-menu-top">
+<div class="main">
+<ul>
+<li>
+<a href="https://www.ssl2buy.com/domain-validation-ssl" title="Cheap Domain Validation Certificates">
+<div class="menu-title">Domain Validation SSL</div>
+<div class="menu-tagline">for fast validation & Strong security</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $8.00 <span class="menu-view">View</span></div>
+</a>
+</li>
+<li class="navi_inner_bg">
+<a href="https://www.ssl2buy.com/wildcard-ssl-certificate" title="Cheap Wildcard SSL Certificates">
+<div class="menu-title">Wildcard SSL Certificates</div>
+<div class="menu-tagline">for multiple sub-domains security</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $34.00 <span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/ev-ssl-certificate" title="Cheap EV SSL Certificates">
+<div class="menu-title">EV SSL Certificates</div>
+<div class="menu-tagline">for green bar & extended security</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $61.60 <span class="menu-view">View</span></div>
+</a>
+</li>
+<li class="navi_inner_bg">
+<a href="https://www.ssl2buy.com/business-validation-ssl" title="Cheap Organization Validation Certificates">
+<div class="menu-title">Organization Validation</div>
+<div class="menu-tagline">for SMBs to maximize web trust</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $48.00 <span class="menu-view">View</span></div>
+</a>
+</li>
+<li class="navi_inner_bg">
+<a href="https://www.ssl2buy.com/multi-domain-ssl" title="Cheap Multi-Domain SSL Certificates">
+<div class="menu-title">Multi Domain SAN SSL</div>
+<div class="menu-tagline">for multiple domains security</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $15.00 <span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/uc-certificate-exchange-ssl" title="Cheap Exchange Server SSL Certificates">
+<div class="menu-title">Exchange Server (UCC)</div>
+<div class="menu-tagline">for microsoft exchange servers</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $33.00 <span class="menu-view">View</span></div>
+</a>
+</li>
+<li class="navi_inner_bg">
+<a href="https://www.ssl2buy.com/code-signing-certificate" title="Cheap Code Signing Certificates">
+<div class="menu-title">Code Signing Certificates</div>
+<div class="menu-tagline">for digital sign of applications</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $60.00 <span class="menu-view">View</span></div>
+</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/multi-domain-wildcard-ssl" title="Cheap Multi Domain Wildcard SSL Certificates">
+<div class="menu-title">Multi Domain Wildcard SSL</div>
+<div class="menu-tagline">for multiple domains + subdomains</div>
+<div class="menu-price"><span class="menu-starts">starts @</span> $15.00 <span class="menu-view">View</span></div>
+</a>
+</li>
+</ul>
+<div class="sub-mega-menu-right">
+<div class="sub-mega-menu-right-box"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20126%20116'%3E%3C/svg%3E" alt="" width="126" height="116" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/30days.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/30days.svg" alt=""  width="126" height="116" /></noscript></div>
+<div class="sub-mega-menu-right-box"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20102%20102'%3E%3C/svg%3E" alt="" width="102" height="102" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/satisfaction.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/satisfaction.svg" alt="" width="102" height="102" /></noscript></div>
+<div class="sub-mega-menu-right-box menu-reviews">
+<a href="https://www.shopperapproved.com/reviews/ssl2buy.com/" target="_blank">
+<div class="menu-reviews-count">4.8</div>
+<div class="menu-reviews-stars"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20108%2024'%3E%3C/svg%3E" alt="Reviews Star" width="108" height="24" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/review-star.png" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/review-star.png" alt="Reviews Star" width="108" height="24" /></noscript></div>
+<div class="menu-reviews-total">14482 Reviews</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li><a href="https://www.ssl2buy.com/partner-program">Reseller</a></li>
+<li class="mega-menu not-mega-menu"><a href="javascript:void(0);">More</a>
+<div class="sub-mega-menu">
+<ul>
+ <li><a href="https://www.ssl2buy.com/ssl-discount-offers">Discount Coupons</a></li>
+<li><a href="https://www.ssl2buy.com/wiki">SSL Wiki</a></li>
+<li><a href="https://www.ssl2buy.com/cybersecurity">CS Journal</a></li>
+<li><a href="https://www.ssl2buy.com/contact-us">Contact Us</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</nav>
+<div class="header-right">
+<a href="https://store.ssl2buy.com/cart" class="header-cart" title="My Cart"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3C/svg%3E" alt="My Cart" width="32" height="32" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/cart-icon.svg"><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/cart-icon.svg" alt="My Cart" width="32" height="32"></noscript></a>
+<a href="https://store.ssl2buy.com/login" class="button button-blue" title="My Account">My Account</a>
+</div>
+<a href="javascript:void(0);" class="mobile-menu">Menu</a>
+<div class="menu-overlay-mobile" style=" display: none;"></div>
+</div>
+</div>
+</div>
+</header>
+<div class="site-content">
+<div class="wiki-banner">
+<div class="main">
+<div class="row">
+<div class="col-8">
+<div class="wiki-banner-left">
+<div class="wiki-banner-left-title">SSL2BUY Wiki</div>
+<div class="wiki-banner-sub-title">News, Information and Resources about SSL Certificates</div>
+</div>
+</div>
+<div class="col-4">
+<div class="category-banner-right-top">
+<div class="category-banner-authorized-reseller">
+<div class="authorized-reseller-sliders">
+<div class="authorized-reseller-slider"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20235%2050'%3E%3C/svg%3E" alt="Comodo" height="50" width="235" data-lazy-src="/wp-content/uploads/2021/10/comodo.svg" /><noscript><img src="/wp-content/uploads/2021/10/comodo.svg" alt="Comodo" height="50" width="235"  /></noscript></div>
+<div class="authorized-reseller-slider"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20235%2050'%3E%3C/svg%3E" alt="AlphaSSL" height="50" width="235" data-lazy-src="/wp-content/uploads/2021/10/alphassl.svg"><noscript><img src="/wp-content/uploads/2021/10/alphassl.svg" alt="AlphaSSL" height="50" width="235"></noscript></div>
+<div class="authorized-reseller-slider"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20235%2050'%3E%3C/svg%3E" alt="RapidSSL" height="50" width="235" data-lazy-src="/wp-content/uploads/2021/10/rapidssl.svg"><noscript><img src="/wp-content/uploads/2021/10/rapidssl.svg" alt="RapidSSL" height="50" width="235"></noscript></div>
+<div class="authorized-reseller-slider"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20235%2050'%3E%3C/svg%3E" alt="GeoTrust" height="50" width="235" data-lazy-src="/wp-content/uploads/2021/10/geotrust.svg"><noscript><img src="/wp-content/uploads/2021/10/geotrust.svg" alt="GeoTrust" height="50" width="235"></noscript></div>
+<div class="authorized-reseller-slider"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20235%2050'%3E%3C/svg%3E" alt="Thawte" height="50" width="235" data-lazy-src="/wp-content/uploads/2021/10/thawte.svg"><noscript><img src="/wp-content/uploads/2021/10/thawte.svg" alt="Thawte" height="50" width="235"></noscript></div>
+<div class="authorized-reseller-slider"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20235%2050'%3E%3C/svg%3E" alt="GlobalSign" height="50" width="235" data-lazy-src="/wp-content/uploads/2021/10/globalsign.svg"><noscript><img src="/wp-content/uploads/2021/10/globalsign.svg" alt="GlobalSign" height="50" width="235"></noscript></div>
+<div class="authorized-reseller-slider"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20235%2050'%3E%3C/svg%3E" alt="DigiCert" height="50" width="235" data-lazy-src="/wp-content/uploads/2021/10/digicert.svg"><noscript><img src="/wp-content/uploads/2021/10/digicert.svg" alt="DigiCert" height="50" width="235"></noscript></div>
+<div class="authorized-reseller-slider"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20235%2050'%3E%3C/svg%3E" alt="Symantec" height="50" width="235" data-lazy-src="/wp-content/uploads/2021/10/symantec.svg"><noscript><img src="/wp-content/uploads/2021/10/symantec.svg" alt="Symantec" height="50" width="235"></noscript></div>
+</div>
+<span>Authorized Reseller</span> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-area-section">
+<div class="container">
+<div class="content-section">
+<div class="main">
+<div class="row">
+<div class="col-8">
+<div id="primary" class="content-area">
+<div class="single-post-title">
+<h1 class="entry-title">Symmetric vs. Asymmetric Encryption &#8211; What are differences?</h1>
+<div class="wiki-current-post-category"><a href="https://www.ssl2buy.com/wiki/ssl-information">SSL Information</a></div> </div>
+<div class="entry-content">
+<h2 style="text-align: left;">Let’s understand the key differences between symmetric vs asymmetric encryption. In a simple word, asymmetric encryption is more secure than symmetric encryption.</h2>
+<p>Information security has grown to be a colossal factor, especially with modern communication networks, leaving loopholes that could be leveraged to devastating effects. This article presents a discussion on two popular encryption schemes that can be used to tighten communication security in Symmetric and Asymmetric Encryption. In principle, the best way to commence this discussion is to start from the basics first. Thus, we look at the definitions of algorithms and key cryptographic concepts and then dive into the core part of the discussion where we present a comparison of the two techniques.<br />
+<a href="https://www.ssl2buy.com"><img class="aligncenter size-full wp-image-3868" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20865%20200'%3E%3C/svg%3E" alt="ssl2buy $9" width="865" height="200" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/uploads/2020/02/time-banner-01.jpg" /><noscript><img class="aligncenter size-full wp-image-3868" src="https://www.ssl2buy.com/wiki/wp-content/uploads/2020/02/time-banner-01.jpg" alt="ssl2buy $9" width="865" height="200" /></noscript></a></p>
+<h2>Algorithms</h2>
+<p>An algorithm is basically a procedure or a formula for solving a data snooping problem. An encryption algorithm is a set of mathematical procedure for performing <a title="Transmit Data Securely with SSL Encryption" href="https://www.ssl2buy.com/wiki/transmit-data-securely-with-ssl-encryption/">encryption on data</a>. Through the use of such an algorithm, information is made in the cipher text and requires the use of a key to transforming the data into its original form. This brings us to the concept of cryptography that has long been used in information security in communication systems.</p>
+<h2>Cryptography</h2>
+<p>Cryptography is a method of using advanced mathematical principles in storing and transmitting data in a particular form so that only those whom it is intended can read and process it. <a title="What is Encryption and Decryption in SSL?" href="https://www.ssl2buy.com/wiki/what-is-encryption-and-decryption/">Encryption</a> is a key concept in cryptography &#8211; It is a process whereby a message is encoded in a format that cannot be read or understood by an eavesdropper. The technique is old and was first used by Caesar to encrypt his messages using Caesar cipher. A plain text from a user can be encrypted to a ciphertext, then send through a communication channel and no eavesdropper can interfere with the plain text. When it reaches the receiver end, the ciphertext is decrypted to the original plain text.</p>
+<h2>Cryptography Terms</h2>
+<ul>
+<li><strong>Encryption</strong>: It is the process of locking up information using cryptography. Information that has been locked this way is encrypted.</li>
+<li><strong>Decryption</strong>: The process of unlocking the encrypted information using cryptographic techniques.</li>
+<li><strong>Key</strong>: A secret like a password used to encrypt and decrypt information. There are a few different types of keys used in cryptography.</li>
+<li><strong>Steganography</strong>: It is actually the science of hiding information from people who would snoop on you. The difference between steganography and encryption is that the would-be snoopers may not be able to tell there’s any hidden information in the first place.</li>
+</ul>
+<h2>What is Symmetric Encryption?</h2>
+<p><img class="aligncenter size-full wp-image-1388" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20796%20435'%3E%3C/svg%3E" alt="Symmetric Encryption" width="796" height="435" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/uploads/2015/12/Symmetric-Encryption.png" /><noscript><img class="aligncenter size-full wp-image-1388" src="https://www.ssl2buy.com/wiki/wp-content/uploads/2015/12/Symmetric-Encryption.png" alt="Symmetric Encryption" width="796" height="435" /></noscript></p>
+<p>This is the simplest kind of encryption that involves only one secret key to cipher and decipher information. Symmetric encryption is an old and best-known technique. It uses a secret key that can either be a number, a word or a string of random letters. It is a blended with the plain text of a message to change the content in a particular way. The sender and the recipient should know the secret key that is used to encrypt and decrypt all the messages. Blowfish, AES, RC4, DES, RC5, and RC6 are examples of symmetric encryption. The most widely used symmetric algorithm is AES-128, AES-192, and AES-256.</p>
+<p>The main disadvantage of the symmetric key encryption is that all parties involved have to exchange the key used to encrypt the data before they can decrypt it.</p>
+<h2>What is Asymmetric Encryption?</h2>
+<p><img class="aligncenter size-full wp-image-1397" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20796%20435'%3E%3C/svg%3E" alt="Asymmetric Encryption" width="796" height="435" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/uploads/2015/12/Asymmetric-Encryption.png" /><noscript><img class="aligncenter size-full wp-image-1397" src="https://www.ssl2buy.com/wiki/wp-content/uploads/2015/12/Asymmetric-Encryption.png" alt="Asymmetric Encryption" width="796" height="435" /></noscript></p>
+<p>Asymmetric encryption is also known as public key cryptography, which is a relatively new method, compared to symmetric encryption. Asymmetric encryption uses two keys to encrypt a plain text. Secret keys are exchanged over the Internet or a large network. It ensures that malicious persons do not misuse the keys. It is important to note that anyone with a secret key can decrypt the message and this is why asymmetric encryption uses two related keys to boosting security. A <a title="What is a Public and Private Key Pair?" href="https://www.ssl2buy.com/wiki/what-is-a-public-and-private-key-pair/">public key</a> is made freely available to anyone who might want to send you a message. The second private key is kept a secret so that you can only know.</p>
+<p>A message that is encrypted using a public key can only be decrypted using a private key, while also, a message encrypted using a private key can be decrypted using a public key. Security of the public key is not required because it is publicly available and can be passed over the internet. Asymmetric key has a far better power in ensuring the security of information transmitted during communication.</p>
+<p>Asymmetric encryption is mostly used in day-to-day communication channels, especially over the Internet. Popular asymmetric key encryption algorithm includes EIGamal, <a title="ECC Algorithm to Enhance Security with Better Key Strength" href="https://www.ssl2buy.com/wiki/ecc-algorithm-to-enhance-security-with-better-key-strength/">RSA, DSA, Elliptic curve techniques</a>, PKCS.</p>
+<h2>Asymmetric Encryption in Digital Certificates</h2>
+<p>To use asymmetric encryption, there must be a way of discovering public keys. One typical technique is using digital certificates in a client-server model of communication. A certificate is a package of information that identifies a user and a server. It contains information such as an organization’s name, the organization that issued the certificate, the users&#8217; email address and country, and users public key.</p>
+<p>When a server and a client require a secure encrypted communication, they send a query over the network to the other party, which sends back a copy of the certificate. The other party’s public key can be extracted from the certificate. A certificate can also be used to uniquely identify the holder.</p>
+<p>SSL/TLS uses both asymmetric and symmetric encryption, quickly look at digitally signed <a href="https://www.ssl2buy.com">SSL certificates</a> issued by trusted certificate authorities (CAs).</p>
+<h2>Difference Between Symmetric and Asymmetric Encryption</h2>
+<ul>
+<li>Symmetric encryption uses a single key that needs to be shared among the people who need to receive the message while asymmetric encryption uses a pair of public key and a private key to encrypt and decrypt messages when communicating.</li>
+<li>Symmetric encryption is an old technique while asymmetric encryption is relatively new.</li>
+<li>Asymmetric encryption was introduced to complement the inherent problem of the need to share the key in symmetric encryption model, eliminating the need to share the key by using a pair of public-private keys.</li>
+<li>Asymmetric encryption takes relatively more time than the symmetric encryption.</li>
+</ul>
+<table width="100%">
+<thead>
+<tr style="background: #19569D;">
+<td style="text-align: center; color: #fff;" width="30%"><b>Key Differences</b></td>
+<td style="text-align: center; color: #fff;" width="35%"><b>Symmetric Encryption</b></td>
+<td style="text-align: center; color: #fff;" width="35%"><b>Asymmetric Encryption</b></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="background: #f0f3f5;"><strong>Size of cipher text</strong></td>
+<td width="208">Smaller cipher text compares to original plain text file.</td>
+<td width="208">Larger cipher text compares to original plain text file.</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Data size</strong></td>
+<td width="208">Used to transmit big data.</td>
+<td width="208">Used to transmit small data.</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Resource Utilization</strong></td>
+<td width="208">Symmetric key encryption works on low usage of resources.</td>
+<td width="208">Asymmetric encryption requires high consumption of resources.</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Key Lengths</strong></td>
+<td width="208">128 or 256-bit key size.</td>
+<td width="208">RSA 2048-bit or higher key size.</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Security</strong></td>
+<td width="208">Less secured due to use a single key for encryption.</td>
+<td width="208">Much safer as two keys are involved in encryption and decryption.</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Number of keys</strong></td>
+<td width="208">Symmetric Encryption uses a single key for encryption and decryption.</td>
+<td width="208">Asymmetric Encryption uses two keys for encryption and decryption</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Techniques</strong></td>
+<td width="208">It is an old technique.</td>
+<td width="208">It is a modern encryption technique.</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Confidentiality</strong></td>
+<td width="208">A single key for encryption and decryption has chances of key compromised.</td>
+<td width="208">Two keys separately made for encryption and decryption that removes the need to share a key.</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Speed</strong></td>
+<td width="208">Symmetric encryption is fast technique</td>
+<td width="208">Asymmetric encryption is slower in terms of speed.</td>
+</tr>
+<tr>
+<td style="background: #f0f3f5;"><strong>Algorithms</strong></td>
+<td width="208">RC4, AES, DES, 3DES, and QUAD.</td>
+<td width="208">RSA, Diffie-Hellman, ECC algorithms.</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusion</h2>
+<p>When it comes to encryption, the latest schemes may necessarily the best fit. You should always use the encryption algorithm that is right for the task at hand. In fact, as cryptography takes a new shift, new algorithms are being developed in a bid to catch up with the eavesdroppers and secure information to enhance confidentiality. Hackers are bound to make it tough for experts in the coming years, thus expect more from the cryptographic community!</p>
+</div>
+</div>
+</div>
+<div class="col-4">
+<aside id="secondary" class="widget-area" role="complementary">
+<section id="search-2" class="widget widget_search">
+<form role="search" method="get" class="search-form" action="https://www.ssl2buy.com/wiki/">
+<i class="fa fa-search"></i><input type="search" id="search-form-6360e7458a49e" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+<button type="submit" class="search-submit">Submit</button>
+</form>
+</section><section id="custom_html-6" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.ssl2buy.com/alphassl-wildcard.php"><img width="272" height="505" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20272%20505'%3E%3C/svg%3E" alt="Wildcard SSL" class="wikisidebarbanner" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/uploads/2019/06/wildcardssl.png" /><noscript><img width="272" height="505" src="https://www.ssl2buy.com/wiki/wp-content/uploads/2019/06/wildcardssl.png" alt="Wildcard SSL" class="wikisidebarbanner"/></noscript></a></div></section><section id="text-3" class="widget widget_text"><h3 class="widget-title">Quick Links</h3> <div class="textwidget"><ul class="quick_links">
+<li><a href="https://www.ssl2buy.com/wiki/ssl-tools/">Free SSL Testing Tools</a></li>
+<li><a href="https://www.ssl2buy.com/download-free-ssl-site-seal">Download Free Site Seal</a></li>
+<li><a href="https://www.ssl2buy.com/ssl-discount-offers/">SSL Discount Offers</a></li>
+</ul></div>
+</section>
+<section id="recent-posts-2" class="widget widget_recent_entries">
+<h3 class="widget-title">Latest Articles</h3>
+<ul>
+<li>
+<a href="https://www.ssl2buy.com/wiki/website-security-certificate">Website Security Certificate: An Important Security Aspect for a Website</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/wiki/what-is-san-ssl-certificate">What Is a SAN SSL Certificate and How Does It Secure Multiple Websites?</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/wiki/regular-code-signing-vs-ev-code-signing">EV Code Signing vs. Regular Code Signing : Decode the Differences</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/wiki/what-is-certificate-authority-ca">What is a Certificate Authority (CA)?</a>
+</li>
+<li>
+<a href="https://www.ssl2buy.com/wiki/changes-issuing-ov-code-signing-certificate">Top Changes in Issuing OV Code Signing Certificate After June 1st, 2023</a>
+</li>
+</ul>
+</section><section id="categories-3" class="widget widget_categories"><h3 class="widget-title">Categories</h3>
+<ul>
+<li class="cat-item cat-item-318"><a href="https://www.ssl2buy.com/wiki/compare-ssl-certificates" title="Compare SSL Certificates by Providers, Prices, and Features
+Looking for an SSL certificate for your website and not able to decide which one is perfect? Then SSL certificate comparisons will help you to choose the best certificate for your website.
+
+There are many certificate authorities that offer different types of certificates with varied features. Here we compared different SSL certificates, prices, and functionalities.
+
+You can easily compare SSL certificate providers and differentiate certificate benefits and verification methods.
+Quick SSL Certificates Comparisons
+You can quickly check our SSL comparison charts, which may help you to take a final decision to purchase an SSL certificate that meets your business needs.">Compare SSL Certificates</a> (12)
+</li>
+<li class="cat-item cat-item-47"><a href="https://www.ssl2buy.com/wiki/create-csr-key-step-by-step-guide">Create CSR Key &#8211; Step by Step Guide</a> (20)
+</li>
+<li class="cat-item cat-item-281"><a href="https://www.ssl2buy.com/wiki/frequently-asked-questions-faqs">Frequently Asked Questions (FAQs)</a> (18)
+</li>
+<li class="cat-item cat-item-1"><a href="https://www.ssl2buy.com/wiki/news-and-announcements">Information Technology Journal</a> (52)
+</li>
+<li class="cat-item cat-item-178"><a href="https://www.ssl2buy.com/wiki/myths-and-facts-about-ssl-https">Myths and Facts about SSL/HTTPS</a> (4)
+</li>
+<li class="cat-item cat-item-2"><a href="https://www.ssl2buy.com/wiki/ssl-certificate-queries">SSL Certificate Queries</a> (23)
+</li>
+<li class="cat-item cat-item-11"><a href="https://www.ssl2buy.com/wiki/ssl-configurations-installations">SSL Configurations &amp; Installations</a> (53)
+</li>
+<li class="cat-item cat-item-65"><a href="https://www.ssl2buy.com/wiki/ssl-information">SSL Information</a> (68)
+</li>
+<li class="cat-item cat-item-270"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle">SSL Intermediate and Root CA Bundle</a> (36)
+<ul class='children'>
+<li class="cat-item cat-item-276"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle/alphassl-ca-bundle">AlphaSSL CA Bundle</a> (1)
+</li>
+<li class="cat-item cat-item-272"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle/comodo-ca-bundle">Comodo CA Bundle</a> (6)
+</li>
+<li class="cat-item cat-item-275"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle/geotrust-ca-bundle">GeoTrust CA Bundle</a> (6)
+</li>
+<li class="cat-item cat-item-319"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle/globalsign-ca-bundle" title="
+">GlobalSign CA Bundle</a> (5)
+</li>
+<li class="cat-item cat-item-274"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle/rapidssl-ca-bundle">RapidSSL CA Bundle</a> (2)
+</li>
+<li class="cat-item cat-item-315"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle/sectigo-ca-bundle">Sectigo CA Bundle</a> (6)
+</li>
+<li class="cat-item cat-item-271"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle/symantec-ca-bundle">Symantec CA Bundle</a> (4)
+</li>
+<li class="cat-item cat-item-273"><a href="https://www.ssl2buy.com/wiki/ssl-intermediate-and-root-ca-bundle/thawte-ca-bundle">Thawte CA Bundle</a> (6)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-46"><a href="https://www.ssl2buy.com/wiki/ssl-tools">SSL Tools</a> (5)
+</li>
+<li class="cat-item cat-item-317"><a href="https://www.ssl2buy.com/wiki/ssl-tls-security-errors">SSL/TLS Security Errors</a> (21)
+</li>
+</ul>
+</section></aside>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-ssl-tools gray-bg">
+<div class="main">
+<h2 class="text-center">Free SSL Testing Tools</h2>
+<div class="row">
+<div class="col-5-new">
+<div class="footer-ssl-tools-inner">
+<a href="https://www.ssl2buy.com/wiki/ssl-installation-checker">
+<div class="footer-ssl-tools-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2090%2074'%3E%3C/svg%3E" alt="SSL Checker" width="90" height="74" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/ssl-checker-icon.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/ssl-checker-icon.svg" alt="SSL Checker" width="90" height="74" /></noscript></div>
+<div class="footer-ssl-tools-name">SSL </br> Checker</div>
+</a>
+</div>
+</div>
+<div class="col-5-new">
+<div class="footer-ssl-tools-inner">
+<a href="https://www.ssl2buy.com/wiki/why-no-padlock">
+<div class="footer-ssl-tools-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2058%2056'%3E%3C/svg%3E" alt="Why No Padlock?" width="58" height="56" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/why-no-padlock-icon.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/why-no-padlock-icon.svg" alt="Why No Padlock?" width="58" height="56" /></noscript></div>
+<div class="footer-ssl-tools-name">Why </br> No Padlock?</div>
+</a>
+</div>
+</div>
+<div class="col-5-new">
+<div class="footer-ssl-tools-inner">
+<a href="https://www.ssl2buy.com/wiki/certificate-decoder">
+<div class="footer-ssl-tools-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2047%2056'%3E%3C/svg%3E" alt="SSL Certificate Decoder" width="47" height="56" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/ssl-certificate-decoder-icon.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/ssl-certificate-decoder-icon.svg" alt="SSL Certificate Decoder" width="47" height="56" /></noscript></div>
+<div class="footer-ssl-tools-name">SSL Certificate </br> Decoder </div>
+</a>
+</div>
+</div>
+<div class="col-5-new">
+<div class="footer-ssl-tools-inner">
+<a href="https://www.ssl2buy.com/wiki/csr-decoder">
+<div class="footer-ssl-tools-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2047%2056'%3E%3C/svg%3E" alt="CSR Decoder" width="47" height="56" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/csr-decoder-icon.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/csr-decoder-icon.svg" alt="CSR Decoder" width="47" height="56" /></noscript></div>
+<div class="footer-ssl-tools-name">CSR </br> Decoder</div>
+</a>
+</div>
+</div>
+<div class="col-5-new">
+<div class="footer-ssl-tools-inner">
+<a href="https://www.ssl2buy.com/wiki/ssl-converter">
+<div class="footer-ssl-tools-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2054%2056'%3E%3C/svg%3E" alt="SSL Converter" width="54" height="56" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/ssl-converter.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/ssl-converter.svg" alt="SSL Converter" width="54" height="56" /></noscript></div>
+<div class="footer-ssl-tools-name">SSL </br> Converter</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-banner">
+<div class="main">
+<h3>Start Securing Your Website Today!</h3>
+<div class="footer-banner-price">
+<span>
+<sup>$</sup>8.00<sub>/year</sub>
+</span>
+</div>
+<a href="https://www.ssl2buy.com/domain-validation-ssl" class="wikifooter9" title="Get Started Now">get started now</a>
+</div>
+</div>
+<div class="footer-reviews gray-bg" data-scroll-index="10">
+<div class="main">
+<div class="row">
+<div class="col-3">
+<div class="footer-reviews-title">we are rated <span>4.8/5</span></div>
+<div class="footer-reviews-star"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%2031'%3E%3C/svg%3E" alt="Reviews Star" width="180" height="31" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/review-star.png" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/review-star.png" alt="Reviews Star" width="180" height="31" /></noscript></div>
+<div class="footer-reviews-count"><span>14482</span> reviews</div>
+<div class="footer-reviews-content">Real customer ratings and reviews at</div>
+<div class="footer-reviews-logo"><a href="https://www.shopperapproved.com/reviews/ssl2buy.com/" target="_blank" rel="nofollow"><img title="SSL2BUY reviews on ShopperApproved" alt="SSL2BUY reviews on ShopperApproved" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20185%2055'%3E%3C/svg%3E" width="185" height="55" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/shopper-aproved.svg" /><noscript><img title="SSL2BUY reviews on ShopperApproved" alt="SSL2BUY reviews on ShopperApproved" src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/shopper-aproved.svg" width="185" height="55" /></noscript></a></div>
+</div>
+<div class="col-9">
+<div style="min-height: 100px;" class="shopperapproved_widget sa_rotate sa_count3 sa_horizontal sa_bgWhite sa_colorBlack sa_borderGray sa_rounded sa_nodate sa_fixed sa_showlinks sa_large "></div><script type="rocketlazyloadscript" data-rocket-type="text/javascript">var sa_interval = 5000;function saLoadScript(src) { var js = window.document.createElement('script'); js.src = src; js.type = 'text/javascript'; document.getElementsByTagName("head")[0].appendChild(js); } if (typeof(shopper_first) == 'undefined') saLoadScript('https://www.shopperapproved.com/widgets/testimonial/3.0/13156.js'); shopper_first = true; </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+
+<div class="main-footer">
+<div class="main">
+<div class="footer-wrapper">
+<div class="footer-widget-box">
+<section id="text-4" class="widget widget_text"><h3 class="widget-title">Cyber Security Journal</h3> <div class="textwidget"> <div class="widget-atlas-latest-post">
+<div class="widget-atlas-latest-post-item">
+<div class="widget-atlas-artical-image">
+<img width="1280" height="720" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201280%20720'%3E%3C/svg%3E" alt="Big Data : Introduction and Its Necessity in Today’s World!" data-lazy-src="https://www.ssl2buy.com/wp-content/uploads/2022/09/big-data-introduction-and-its-necessity-in-todays-world.svg"><noscript><img width="1280" height="720" src="https://www.ssl2buy.com/wp-content/uploads/2022/09/big-data-introduction-and-its-necessity-in-todays-world.svg" alt="Big Data : Introduction and Its Necessity in Today’s World!"></noscript>
+</div>
+<div class="widget-atlas-artical-content">
+<div><a href="https://www.ssl2buy.com/cybersecurity/big-data-introduction">Big Data : Introduction and Its Necessity in Today’s World!</a></div>
+<div class="widget-atlas-artical-date">Oct 06 2022</div>
+</div>
+</div>
+<div class="widget-atlas-latest-post-item">
+<div class="widget-atlas-artical-image">
+<img width="1280" height="720" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201280%20720'%3E%3C/svg%3E" alt="Cyber Security For Email Communication: Why You Need It and Its Best Practices" data-lazy-src="https://www.ssl2buy.com/wp-content/uploads/2022/09/cyber-security-for-email-communication.svg"><noscript><img width="1280" height="720" src="https://www.ssl2buy.com/wp-content/uploads/2022/09/cyber-security-for-email-communication.svg" alt="Cyber Security For Email Communication: Why You Need It and Its Best Practices"></noscript>
+</div>
+<div class="widget-atlas-artical-content">
+<div><a href="https://www.ssl2buy.com/cybersecurity/cyber-security-for-email-communication">Cyber Security For Email Communication: Why You Need It and Its Best Practices</a></div>
+<div class="widget-atlas-artical-date">Sep 06 2022</div>
+</div>
+</div>
+<div class="widget-atlas-latest-post-item">
+<div class="widget-atlas-artical-image">
+<img width="1280" height="720" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201280%20720'%3E%3C/svg%3E" alt="Security Operations Center (SOC) - A Worthful Investment for an Organization" data-lazy-src="https://www.ssl2buy.com/wp-content/uploads/2022/08/security-operations-center-soc-a-worthful-investment-for-an-organization.svg"><noscript><img width="1280" height="720" src="https://www.ssl2buy.com/wp-content/uploads/2022/08/security-operations-center-soc-a-worthful-investment-for-an-organization.svg" alt="Security Operations Center (SOC) - A Worthful Investment for an Organization"></noscript>
+</div>
+<div class="widget-atlas-artical-content">
+<div><a href="https://www.ssl2buy.com/cybersecurity/security-operations-center-soc">Security Operations Center (SOC) - A Worthful Investment for an Organization</a></div>
+<div class="widget-atlas-artical-date">Aug 15 2022</div>
+</div>
+</div>
+</div>
+</div>
+</section> </div>
+<div class="footer-widget-box footer-menu">
+<section id="custom_html-11" class="widget_text widget widget_custom_html"><h3 class="widget-title">SSL Products</h3><div class="textwidget custom-html-widget"><div class="menu-type-container"><ul id="menu-type" class="menu"><li id="menu-item-2325" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2325"><a href="https://www.ssl2buy.com/code-signing-certificate">Code Signing Certificates</a></li>
+<li id="menu-item-2327" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2327"><a href="https://www.ssl2buy.com/ev-ssl-certificate">EV SSL Certificates</a></li>
+<li id="menu-item-2330" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2330"><a href="https://www.ssl2buy.com/multi-domain-ssl">Multi Domain SAN SSL</a></li>
+<li id="menu-item-4605" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4605"><a href="https://www.ssl2buy.com/multi-domain-wildcard-ssl" aria-current="page">Multi Domain Wildcard SSL</a></li>
+<li id="menu-item-2329" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2329"><a href="https://www.ssl2buy.com/business-validation-ssl">Organization Validation SSL</a></li>
+<li id="menu-item-2326" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2326"><a href="https://www.ssl2buy.com/single-domain-ssl">Single Domain SSL</a></li>
+<li id="menu-item-2331" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2331"><a href="https://www.ssl2buy.com/uc-certificate-exchange-ssl">UC + Exchange Certificate</a></li>
+<li id="menu-item-2328" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2328"><a href="https://www.ssl2buy.com/wildcard-ssl-certificate">Wildcard SSL Certificates</a></li>
+</ul></div></div></section> </div>
+<div class="footer-widget-box footer-menu">
+<section id="custom_html-12" class="widget_text widget widget_custom_html"><h3 class="widget-title">SSL Brands</h3><div class="textwidget custom-html-widget"><div class="menu-brand-container"><ul id="menu-brand" class="menu"><li id="menu-item-2318" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2318"><a href="https://www.ssl2buy.com/alpha-ssl-certificates">AlphaSSL</a></li>
+<li id="menu-item-2317" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2317"><a href="https://www.ssl2buy.com/comodo-ssl-certificates">COMODO</a></li>
+<li id="menu-item-7543" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7543"><a href="https://www.ssl2buy.com/sectigo-ssl-certificates">Sectigo</a></li>
+<li id="menu-item-4709" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4709"><a href="https://www.ssl2buy.com/digicert-ssl-certificates">DigiCert</a></li>
+<li id="menu-item-2320" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2320"><a href="https://www.ssl2buy.com/geotrust-ssl-certificates">GeoTrust</a></li>
+<li id="menu-item-2321" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2321"><a href="https://www.ssl2buy.com/globalsign-ssl-certificates">GlobalSign</a></li>
+<li id="menu-item-2319" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2319"><a href="https://www.ssl2buy.com/rapidssl-ssl-certificates">RapidSSL</a></li>
+<li id="menu-item-2323" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2323"><a href="https://www.ssl2buy.com/symantec-ssl-certificates">Symantec</a></li>
+<li id="menu-item-2322" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2322"><a href="https://www.ssl2buy.com/thawte-ssl-certificates">Thawte</a></li>
+</ul></div></div></section>
+</div>
+<div class="footer-widget-box footer-menu">
+<section id="custom_html-13" class="widget_text widget widget_custom_html"><h3 class="widget-title">Quick Links</h3><div class="textwidget custom-html-widget"><div class="menu-quick-links-container"><ul id="menu-quick-links" class="menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ssl2buy.com/about-company">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ssl2buy.com/cybersecurity">CS Journal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ssl2buy.com/contact-us">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ssl2buy.com/partner-program">Partner Program</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ssl2buy.com/policy">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ssl2buy.com/refund-policy">Refund Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ssl2buy.com/sitemap">Sitemap</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ssl2buy.com/terms-conditions">Terms</a></li>
+</ul></div> </div></section> </div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="copyright clear">
+<div class="main">
+<div class="row">
+<div class="col-4">
+Copyright &copy; 2010-2022 ssl2buy.com. All rights reserved
+</div>
+<div class="col-4 footer-we-accept">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20270%2032'%3E%3C/svg%3E" alt="We Accept" width="270" height="32" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/payment-logo.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/payment-logo.svg" alt="We Accept" width="270" height="32" /></noscript>
+</div>
+<div class="col-4 footer-social-main">
+<a href="https://twitter.com/SSL2BUY" class="footer-social" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2018'%3E%3C/svg%3E" alt="twitter" width="22" height="18" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/twitter.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/twitter.svg" alt="twitter"  width="22" height="18" /></noscript></a>
+<a href="https://www.linkedin.com/company/ssl2buy-llc" class="footer-social" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2018'%3E%3C/svg%3E" alt="linkedin" width="22" height="18" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/linkedin.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/linkedin.svg" alt="linkedin" width="22" height="18" /></noscript></a>
+<a href="https://www.youtube.com/c/SSL2BUY" class="footer-social" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2018'%3E%3C/svg%3E" alt="Youtube" width="22" height="18" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/youtube.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/youtube.svg" alt="Youtube" width="22" height="18" /></noscript></a>
+<a href="https://www.facebook.com/ssl2buyllc/" class="footer-social" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2018'%3E%3C/svg%3E" alt="Facebook" width="22" height="18" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/facebook.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/facebook.svg" alt="Facebook" width="22" height="18" /></noscript></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type="ddc507d282c8a234e292151c-text/javascript" id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/wiki(\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.ssl2buy.com\/wiki","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="ddc507d282c8a234e292151c-text/javascript">window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.ssl2buy.com/wiki/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js" type="ddc507d282c8a234e292151c-text/javascript"></script>
+<div class="cookies_bottom" style="display:none">
+<div class="cookies_bottom_left">We use cookies to understand your interactions and improve your web experience. <a href="javascript:void(0);" class="accept-button">I Accept</a> <a class="footer-policy-link" target="_blank" href="https://www.ssl2buy.com/policy#cookies"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2015%2015'%3E%3C/svg%3E" alt="link" width="15" height="15" data-lazy-src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/line-icon.svg" /><noscript><img src="https://www.ssl2buy.com/wiki/wp-content/themes/ssl2buy/images/line-icon.svg" alt="link" width="15" height="15" /></noscript></a></div>
+</div>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+
+function createCookie(name,value,days) {
+	jQuery('.cookies_bottom').hide();
+
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	document.cookie = name+"="+value+expires+"; path=/; domain=.ssl2buy.com";
+}
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+var PrivacyPolicycookie = readCookie('CookiesPrivacyPolicy');
+jQuery(document).ready(function () {
+    
+    jQuery('.cookies_bottom .accept-button').click(function (){
+        createCookie('CookiesPrivacyPolicy','1','1');
+    });
+    
+		if(PrivacyPolicycookie == 1){
+			jQuery(".cookies_bottom").hide();
+		}else{
+			jQuery(".cookies_bottom").show();
+		}
+	});
+});</script>
+<script type="rocketlazyloadscript" data-minify="1" src="https://www.ssl2buy.com/wiki/wp-content/cache/min/1/wiki/wp-content/themes/ssl2buy/assets/js/jquery-menu.js?ver=1667295020" data-rocket-type="text/javascript" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" src="https://www.ssl2buy.com/wiki/wp-content/cache/min/1/wiki/wp-content/themes/ssl2buy/assets/js/jquery.sticky-kit.js?ver=1667295020" data-rocket-type="text/javascript" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" src="https://www.ssl2buy.com/wiki/wp-content/cache/min/1/wiki/wp-content/themes/ssl2buy/assets/js/custom.js?ver=1667295020" data-rocket-type="text/javascript" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+	jQuery('document').ready(function(){
+	    if (jQuery(window).width() < 767) {
+			jQuery('.footer-menu').find('h3').click(function(){
+				jQuery(this).parents('.footer-menu').siblings('.footer-menu').removeClass('active');
+				jQuery(this).parents('.footer-menu').siblings('.footer-menu').find('.custom-html-widget').slideUp();
+
+				jQuery(this).parents('.footer-menu').toggleClass('active');
+				jQuery(this).parents('.footer-menu').find('.custom-html-widget').slideToggle();
+			});
+		
+    		jQuery('.mobile-menu').click(function(){
+    				jQuery('#site-navigation').addClass('active');
+    			
+    			});
+    		jQuery('.menu-overlay-mobile, .mobile-menu-close').click(function(){
+    			jQuery('#site-navigation').removeClass('active');
+    			jQuery('.menu-overlay-mobile').hide();
+    		});
+		};
+	});
+});</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+	jQuery('document').ready(function(){
+		
+		jQuery('.faqs-row').find('h3').click(function(){
+			if(jQuery(this).next('.faqs-answer').is(":visible")){
+                jQuery(this).next('.faqs-answer').slideUp();
+				jQuery(this).removeClass('active');
+            } else {
+               jQuery('.faqs-row .faqs-answer').slideUp();
+			   jQuery(this).next('.faqs-answer').slideDown();
+			   jQuery('.faqs-row h3').removeClass('active');
+			   jQuery(this).addClass('active');
+            }
+		});
+		
+		if (jQuery(".home-banner-slider").length > 0){
+			jQuery('.home-banner-slider').slick({
+				dots: true,
+				speed: 300,
+				slidesToShow: 1,
+				arrows: false,
+				infinite: true
+			});
+		}
+		if (jQuery(".authorized-reseller-sliders").length > 0){
+			jQuery('.authorized-reseller-sliders').slick({
+				dots: false,
+				speed: 300,
+				slidesToShow: 1,
+				arrows: false,
+				infinite: true,
+				autoplay: true
+			});
+		}
+		
+		var headerheight = jQuery('.site-header').height();
+		jQuery.scrollIt({
+				upKey: 10,        
+				downKey: 10,      
+				easing: 'easeInOutExpo',      
+				scrollTime: 600,       
+				activeClass: 'active', 
+				onPageChange: null,    
+				topOffset: -140         
+			});
+		 jQuery(".sub-navi").stick_in_parent({
+				  parent: ".site-content",
+				  offset_top: headerheight
+			});
+		
+		jQuery(".filter-left-div").stick_in_parent({
+			parent: ".price-main-wrapper",
+			offset_top: headerheight + 20
+		});
+		
+		
+	});
+	jQuery(window).scroll(function(event) {
+		var scrolltop = jQuery(this).scrollTop();
+		if (scrolltop >= 150) {
+			jQuery('.site-header').addClass('sticky');
+		} else {
+			jQuery('.site-header').removeClass('sticky');
+		}
+	});
+	
+	equalheight = function(container){
+
+	var currentTallest = 0,
+		 currentRowStart = 0,
+		 rowDivs = new Array(),
+		 $el,
+		 topPosition = 0;
+	 jQuery(container).each(function() {
+
+	   $el = jQuery(this);
+	   jQuery($el).height('auto')
+	   topPostion = $el.position().top;
+
+	   if (currentRowStart != topPostion) {
+		 for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+		   rowDivs[currentDiv].height(currentTallest);
+		 }
+		 rowDivs.length = 0; // empty the array
+		 currentRowStart = topPostion;
+		 currentTallest = $el.height();
+		 rowDivs.push($el);
+	   } else {
+		 rowDivs.push($el);
+		 currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+	  }
+	   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+		 rowDivs[currentDiv].height(currentTallest);
+	   }
+	 });
+	}
+
+	jQuery(window).load(function() {
+	  equalheight('.benefits .benefits-content');
+	});
+
+
+	jQuery(window).resize(function(){
+	  equalheight('.benefits .benefits-content');
+	});
+});</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ddc507d282c8a234e292151c-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"76ab6eb8984d1b95","token":"30a103720a404aaa91366783f484348a","version":"2022.11.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

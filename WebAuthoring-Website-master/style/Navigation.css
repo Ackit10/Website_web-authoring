@@ -1,0 +1,26 @@
+ul.navbar
+{
+  list-style:none;
+  height:39px;
+  line-height:39px;
+  width:100%;
+  background-color:#669999;
+}
+ul.navbar li
+{
+	
+	padding-left:1%;
+	padding-right:1%;
+	float:left;
+	
+}
+ul.navbar a
+{
+  color:white;
+  text-decoration:none;
+  font-size:95%;
+}
+ul.navbar li:hover
+{
+ background-color:#999999;
+}

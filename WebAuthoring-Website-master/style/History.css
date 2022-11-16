@@ -1,0 +1,22 @@
+*{margin:0px; padding:0px;}
+#Content
+{
+    margin-top:1px;
+    margin-bottom:1px;
+     
+}
+div.History_content
+{
+    width:70%;
+    height: 20%;
+    background-color:aquamarine;
+    margin-left:15%;
+    border: 1px solid grey;
+}
+h1
+{
+    text-align:center;
+}
+div.History_content p{
+    padding:5px;
+}

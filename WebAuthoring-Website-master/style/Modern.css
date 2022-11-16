@@ -1,0 +1,12 @@
+*{margin:0px; padding:0px;}
+body
+{background-image: url("Content/modern.jpg");
+ background-repeat:no-repeat;
+}
+#Content
+{
+	width:80%;
+	height:100%;
+	margin-left:10%;
+	background-color:white;
+}
