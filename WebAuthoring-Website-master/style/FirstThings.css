@@ -15,3 +15,7 @@ body {
 	background-image: url("Content/ArpaNet.jpg");
 	background-repeat: no-repeat;
 }
+p{
+	text-align:center;
+	padding:20px 10% 20px 10%;
+}
